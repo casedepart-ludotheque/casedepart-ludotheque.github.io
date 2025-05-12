@@ -1,9 +1,9 @@
 backend:
   name: git-gateway
-  branch: main
+  branch: main  # remplace par master si c’est ton cas
 
-media_folder: "assets/uploads"
-public_folder: "/assets/uploads"
+media_folder: "img/uploads"        # où tu veux stocker les images
+public_folder: "/img/uploads"
 
 collections:
   - name: "posts"
@@ -15,3 +15,13 @@ collections:
       - { label: "Titre", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Contenu", name: "body", widget: "markdown" }
+
+  - name: "config_site"
+    label: "Fichier de configuration"
+    files:
+      - label: "Site config"
+        name: "site_config"
+        file: "_data/config.yml"
+        fields:
+          - { label: "Titre du site", name: "site_title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
