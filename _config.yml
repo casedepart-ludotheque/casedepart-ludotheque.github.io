@@ -2,9 +2,9 @@ url: https://casedepart-ludotheque.github.io
 baseurl: https://casedepart-ludotheque.github.io
 
 # Site settings
-title: Awesome Title
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: Case Départ
+email: casedepart-ludotheque@proton.me
+description: "Le site de Case Départ, la ludothèque associative en Corrèze"
 
 
 # Team names, titles and social links
@@ -57,8 +57,8 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: Lubersac
+  - line: Corrèze, France
 
 # Build settings
 markdown: kramdown
