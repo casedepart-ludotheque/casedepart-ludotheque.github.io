@@ -2,7 +2,9 @@ backend:
   name: github
   repo: casedepart-ludotheque/casedepart-ludotheque.github.io
   branch: main  # ou master
-  auth_scope: repo
+  auth:
+    client_id: Ov23liuMcsJuWppPabvy
+    client_secret: 592dcc7cf1f3c75223877f4af860bf425097edcc
 
 media_folder: "img/uploads"        # où tu veux stocker les images
 public_folder: "/img/uploads"
