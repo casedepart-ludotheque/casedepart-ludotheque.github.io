@@ -1,0 +1,73 @@
+<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Navigation Bouton</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand-div">
+                    <img class="img-fluid" src="img/logo-dessin.png" alt="">
+                    <a class="navbar-brand page-scroll" href="#page-top">{{site.title}}</a>
+                </div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#l-association">L'association</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#programme">Programme</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#emprunter-un-jeu">Emprunter un jeu</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#adherer">Adhérer</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6 p-0">
+                   <!-- <img id="image-accueil" src="img/img-accueil-1.jpg" alt="" class="img-fluid" style="transition: opacity 1s ease; opacity: 1;"> -->
+                    <img id="img-accueil-1" src="/img/img-accueil-1.jpg" alt="Image accueil" style="width: 100%; transition: opacity 1s; opacity: 1;">
+                    <img id="img-accueil-2" src="/img/img-accueil-2.jpg" alt="Image accueil" style="position: absolute; top: 0; left: 0; width: 100%; transition: opacity 1s; opacity: 0;">
+                </div>
+                <div class="col-md-6">
+                    <div class="intro-text">
+                        <div class="intro-lead-in">Bienvenue sur Case Départ</div>
+                        <div class="intro-heading">Ludothèque associative</div>
+                        <p>- Pour les enfants de 0 à 130 ans -</p>
+                        <a href="#services" class="page-scroll btn btn-xl">Programme</a>
+                        <a href="#services" class="page-scroll btn btn-xl">Emprunter un jeu</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+<!--
+        {% for page in site.pages %}
+          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
+        {% endfor %}
+ -->
+
