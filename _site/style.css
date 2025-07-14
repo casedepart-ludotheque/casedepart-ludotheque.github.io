@@ -1089,7 +1089,7 @@ body {
     }
 }
 
-@media(min-width:768px) and (max-width:1200px){
+@media all and (max-width:1200px){
     header{
         padding-top: 220px;
     }
