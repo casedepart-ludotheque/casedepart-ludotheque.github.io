@@ -1,40 +1,23 @@
 prose:
-  rooturl: '_posts'
-  siteurl: 'http://casedepart-ludotheque.github.io/'
-  media: "assets/images/posts"
-
+  rooturl: "_posts"
+  siteurl: "https://casedepart-ludotheque.github.io"
+  media: "assets/images"
   metadata:
-    "_posts":
+    _posts:
       - name: "title"
         field:
-          label: "Titre de l'article"
           element: "text"
-          placeholder: "Titre descriptif"
-
+          label: "Titre"
       - name: "date"
         field:
-          label: "Date de publication"
           element: "text"
-          placeholder: "YYYY-MM-DD HH:MM:SS"
+          label: "Date"
           value: CURRENT_DATETIME
-
       - name: "category"
         field:
-          label: "Catégorie"
           element: "select"
+          label: "Catégorie"
           options:
-            - fruits
-            - techniques
-            - événements
-            - divers
-
-      - name: "image"
-        field:
-          label: "Image principale"
-          element: "text"
-          placeholder: "/assets/images/posts/monimage.jpg"
-
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
+            - jardin
+            - pommier
+            - greffe
