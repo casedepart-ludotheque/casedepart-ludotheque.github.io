@@ -1,5 +1,7 @@
 ---
-title: ''
+title: ""
+date: ""
+category: ""
 ---
 ## A New Post
 
