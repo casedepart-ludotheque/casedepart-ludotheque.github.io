@@ -1,4 +1,6 @@
 prose:
+  rooturl: '_posts'
+  siteurl: 'http://casedepart-ludotheque.github.io/'
   media: "assets/images/posts"
 
   metadata:
