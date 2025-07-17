@@ -1,6 +1,4 @@
 prose:
-  rooturl: "/"
-  siteurl: "https://tonsite.fr"
   media: "assets/images/posts"
 
   metadata:
