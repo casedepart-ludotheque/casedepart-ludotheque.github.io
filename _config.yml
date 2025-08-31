@@ -63,3 +63,40 @@ address:
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+
+prose:
+  rooturl: ''
+  siteurl: 'https://casedepart-ludotheque.github.io//'
+  media: 'img/posts'
+  metadata:
+    _posts:
+      - name: "title"
+        field:
+          label: "Titre de l'article"
+          element: "text"
+          placeholder: "Titre descriptif"
+      - name: "date"
+        field:
+          label: "Date de publication"
+          element: "text"
+          placeholder: "YYYY-MM-DD HH:MM:SS"
+          value: CURRENT_DATETIME
+      - name: "category"
+        field:
+          label: "Catégorie"
+          element: "select"
+          options:
+            - Agenda
+            - Nouveautés
+            - Évènements extérieurs
+      - name: "excerpt"
+        field:
+          label: "Text"
+          element: "text"
+          placeholder: "Entrer un texte court (1 phrase ou 2)"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      
