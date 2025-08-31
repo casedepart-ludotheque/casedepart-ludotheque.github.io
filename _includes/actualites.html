@@ -9,25 +9,22 @@
             </div>
             <div class="row">
             {% for post in site.posts %}
-            <div class="col-12 col-sm-6 col-md-4 wow fadeIn" data-wow-delay="0.1s">
-                <article class="d-flex flex-column justify-content-between">
-                    {% assign img = post.content | split: 'src="' | last | split: '"' | first %}
-                    {% if img contains '.jpg' or img contains '.png' %}
-                    <img src="{{ img }}" alt="Image de {{ post.title }}" class="post-thumbnail">
-                    {% else %}
-                    <img src="assets/img/defaut_thumbnail" alt="Image du post Terralocale {{ post.date }}" class="post-thumbnail">
-                    {% endif %}
-                    <div>
-                        <h3 class="text-uppercase"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-                        <div class="excerpt">
-                            {{ post.excerpt | strip_html | truncate: 200 }}
-                            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
                         </div>
+                        <img src="img/portfolio/{{ post.image }}" class="img-responsive img-centered" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>{{ post.titre }}</h4>
+                        <p class="text-muted">{{ post.lieu }}</p>
                     </div>
-                    <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-                </article>
-            </div>
+                </div>
             {% endfor %}
             </div>
         </div>
     </section>
+
