@@ -8,36 +8,23 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form action="https://formspree.io/f/mrbakdqz" method="POST" id="contactForm" >
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="control-group form-group">
-                                    <input type="text" class="form-control" placeholder="NOM et Prénom *" name="name" id="name" required>
-                                </div>
-                                <div class="control-group form-group">
-                                    <input type="email" class="form-control" placeholder="Email *" id="email" name="email" required>
-                                </div>
-                                <div class="control-group form-group">
-                                    <input type="tel" class="form-control" placeholder="Téléphone [facultatif]" id="phone" name="phone">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="control-group form-group">
-                                    <textarea class="form-control" placeholder="Votre Message *" id="message"name="message" required></textarea>
-                                    <input type="hidden" name="_language" value="fr" />
+                    <form action="https://formspree.io/f/mrbakdqz" method="POST">
+  <label>Nom :</label>
+  <input type="text" name="name" required>
 
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <button type="submit" class="btn btn-xl">Envoyer le message</button>
-                            </div>
-                        </div>
-                    </form>
+  <label>Email :</label>
+  <input type="email" name="email" required>
+
+  <label>Message :</label>
+  <textarea name="message" required></textarea>
+
+  <button type="submit">Envoyer</button>
+</form>
                 </div>
             </div>
         </div>
     </section>
+
 
 
 
