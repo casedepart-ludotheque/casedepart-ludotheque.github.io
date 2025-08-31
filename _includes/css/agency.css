@@ -15,6 +15,18 @@
     padding: 0;
 }
 
+.mb-2{
+    margin-bottom: 2rem;
+
+}.mb-3{
+    margin-bottom: 3rem;
+}
+.mb-4{
+    margin-bottom: 4rem;
+}
+
+
+
 .img-fluid{
     max-width: 100%;
     height: auto;
@@ -461,7 +473,7 @@ section h3.section-subheading {
 }
 
 #programme{
-    background-color: #{{ site.data.template.color.third }};
+   /* background-color: #{{ site.data.template.color.third }};*/
 }
 
 #programme h2,
@@ -1035,6 +1047,64 @@ body {
 
 #adherer p{
     color: white;
+}
+
+/**** Emprunter un jeu *****/
+
+#emprunter-un-jeu #img-ludo{
+    margin-bottom: 4rem;
+    transition: all .3s ease;
+    border-radius: 5px;
+    border: 5px solid #{{ site.data.template.color.third }} ;
+}
+
+#emprunter-un-jeu #img-ludo:hover{
+    border: 5px solid #{{ site.data.template.color.primary }} ;
+    transition: all .2s ease;
+}
+
+#emprunter-un-jeu{
+   background-color: #{{ site.data.template.color.third }};
+}
+
+#emprunter-un-jeu h2,
+#emprunter-un-jeu h3,
+#emprunter-un-jeu h4{
+    color: #{{ site.data.template.color.primary }} !important;
+}
+
+#emprunter-un-jeu p{
+    color: white !important;
+}
+
+/* vie associative */
+
+
+#vie-associative{
+    /* background-color: #{{ site.data.template.color.third }}; */
+}
+
+#vie-associative h2{
+    color: #{{ site.data.template.color.primary }};
+}
+
+#vie-associative h4{
+    margin-bottom: 1rem;
+    color: #{{ site.data.template.color.primary }};
+}
+
+#vie-associative p{
+    color: #222;
+}
+
+#vie-associative .team-member img {
+    border: 7px solid #fe9012;
+}
+
+/* Nos partenaires */
+
+#nos-partenaires h2{
+    color: #{{ site.data.template.color.primary }};
 }
 
 
