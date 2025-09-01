@@ -1,5 +1,7 @@
 ---
-title: "Titre de test"
-date: 2025-07-17 10:00:00 +0000
+layout: post
+title: Titre de test
+date: '2025-07-17 10:00:00 +0000'
 category: jardin
+titre: OUIOUOIUOI
 ---
