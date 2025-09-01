@@ -90,7 +90,7 @@ prose:
             - Agenda
             - Nouveautés
             - Évènements extérieurs
-            - name: "excerpt"
+      - name: "excerpt"
         field:
           label: "Text"
           element: "text"
@@ -105,5 +105,6 @@ prose:
           element: "hidden"
           value: "post"
       
+
 
 
