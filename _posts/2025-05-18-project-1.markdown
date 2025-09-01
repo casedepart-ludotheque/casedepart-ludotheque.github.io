@@ -2,7 +2,7 @@
 layout: default
 titre: Rencontre 221 juin 2025
 lieu: Lubersac
-image: dreams-thumbnail.png
+image: dreams-thumbnai.png
 date: 'Fri Jul 18 2014 02:00:00 GMT+0200 (heure d’été d’Europe centrale)'
 modal-id: 1
 img: dreams.png
