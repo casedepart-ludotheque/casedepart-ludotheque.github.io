@@ -3,7 +3,7 @@ layout: default
 titre: Rencontre Vendredi 2 aout
 lieu: Lubersac
 image: dreams-thumbnail.png
-date: Vendredi 2 aout
+date: '2014-07-18'
 modal-id: 1
 img: dreams.png
 alt: image-alt
