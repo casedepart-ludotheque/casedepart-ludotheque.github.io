@@ -96,12 +96,12 @@ prose:
             - Évènements extérieurs
       - name: "excerpt"
         field:
-          label: "Text"
+          label: "Text court"
           element: "text"
           placeholder: "Entrer un texte résumé (1 phrase ou 2)"
       - name: "description"
         field:
-          label: "Text"
+          label: "Description complète"
           element: "textarea"
           placeholder: "Entrer la descrition complete"
       - name: "layout"
@@ -113,4 +113,5 @@ prose:
           element: "hidden"
           placeholder: "YYYY-MM-DD"
           value: CURRENT_DATETIME
+
 
