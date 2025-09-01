@@ -16,16 +16,16 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/{{ post.image }}" class="img-responsive img-centered" alt="">
+                        <p class="article-category">{{ post.category }}</p>
+                        <img src="img/portfolio/{{ post.image }}" class="img-responsive img-centered" alt="image article {{ post.titre }}">
                     </a>
                     <div class="portfolio-caption">
                         <h4>{{ post.titre }}</h4>
                         <p class="text-muted">{{ post.lieu }}</p>
+                        <p class="text-muted">{{ post.date }}</p>
                     </div>
                 </div>
             {% endfor %}
             </div>
         </div>
     </section>
-
-
