@@ -90,13 +90,19 @@ prose:
             - Agenda
             - Nouveautés
             - Évènements extérieurs
-      - name: "excerpt"
+            - name: "excerpt"
         field:
           label: "Text"
           element: "text"
-          placeholder: "Entrer un texte court (1 phrase ou 2)"
+          placeholder: "Entrer un texte résumé (1 phrase ou 2)"
+      - name: "description"
+        field:
+          label: "Text"
+          element: "textarea"
+          placeholder: "Entrez la descrition complete"
       - name: "layout"
         field:
           element: "hidden"
           value: "post"
       
+
