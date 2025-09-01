@@ -76,12 +76,11 @@ prose:
           label: "Titre de l'article"
           element: "text"
           placeholder: "Titre"
-      - name: "date"
+      - name: "datepost"
         field:
           label: "Date de publication"
           element: "text"
-          placeholder: "YYYY-MM-DD"
-          value: CURRENT_DATETIME
+          placeholder: "Jour N° Mois"
       - name: "lieu"
         field:
           label: "Text"
@@ -109,3 +108,9 @@ prose:
         field:
           element: "hidden"
           value: "post"
+      - name: "date"
+        field:
+          element: "hidden"
+          placeholder: "YYYY-MM-DD"
+          value: CURRENT_DATETIME
+
