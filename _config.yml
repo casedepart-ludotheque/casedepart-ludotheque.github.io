@@ -71,17 +71,22 @@ prose:
   media: 'img/posts'
   metadata:
     _posts:
-      - name: "title"
+      - name: "titre"
         field:
           label: "Titre de l'article"
           element: "text"
-          placeholder: "Titre descriptif"
+          placeholder: "Titre"
       - name: "date"
         field:
           label: "Date de publication"
           element: "text"
           placeholder: "YYYY-MM-DD"
           value: CURRENT_DATETIME
+      - name: "lieu"
+        field:
+          label: "Text"
+          element: "text"
+          placeholder: "Entrer le lieu"
       - name: "category"
         field:
           label: "Catégorie"
@@ -99,12 +104,9 @@ prose:
         field:
           label: "Text"
           element: "textarea"
-          placeholder: "Entrez la descrition complete"
+          placeholder: "Entrer la descrition complete"
       - name: "layout"
         field:
           element: "hidden"
           value: "post"
       
-
-
-
