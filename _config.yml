@@ -80,7 +80,7 @@ prose:
         field:
           label: "Date de publication"
           element: "text"
-          placeholder: "YYYY-MM-DD HH:MM:SS"
+          placeholder: "YYYY-MM-DD"
           value: CURRENT_DATETIME
       - name: "category"
         field:
@@ -105,4 +105,5 @@ prose:
           element: "hidden"
           value: "post"
       
+
 
