@@ -1010,6 +1010,13 @@ body {
     margin-bottom: 0.8rem;
 }
 
+#lassociation #tipeee-text{
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  text-align: center;
+  padding: 5px;
+  font-style: italic;
+}
+
 /*  programme */
 
 #programme h2{
@@ -1162,4 +1169,5 @@ body {
     text-align: center;
     margin-bottom: 3rem;
 }
+
 }
