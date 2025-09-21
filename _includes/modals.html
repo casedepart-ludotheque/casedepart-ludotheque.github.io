@@ -12,7 +12,10 @@
               <p class="article-category">{{ post.category }}</p>
               <h2>{{ post.titre }}</h2>
               <hr class="star-primary">
-              <img src="img/posts/{{ post.image }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+              {% assign img = post.content | split: 'src="' | last | split: '"' | first %}
+                        {% if img contains '.jpg' or img contains '.png' %}
+                                <img src="{{ img }}" class="img-responsive img-centered" alt="image article {{ post.titre}}"> 
+                        {% endif %}
               <p>{{ post.description }}</p>
               <ul class="list-inline item-details">
                 <li>Date:
