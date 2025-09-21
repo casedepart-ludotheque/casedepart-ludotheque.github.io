@@ -17,7 +17,7 @@
                             </div>
                         </div>
                         <p class="article-category">{{ post.category }}</p>
-                        <img src="img/posts/{{ post.image }}" class="img-responsive img-centered" alt="image article {{ post.titre 
+                        <img src="img/posts/{{ post.image }}" class="img-responsive img-centered" alt="image article {{ post.titre}}"> 
 
                             {% assign img = post.content | split: 'src="' | last | split: '"' | first %}
                         {% if img contains '.jpg' or img contains '.png' %}
