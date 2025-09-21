@@ -83,7 +83,7 @@ prose:
           placeholder: "Jour N° Mois"
       - name: "lieu"
         field:
-          label: "Text"
+          label: "Lieu"
           element: "text"
           placeholder: "Entrer le lieu"
       - name: "category"
@@ -113,5 +113,6 @@ prose:
           element: "hidden"
           placeholder: "YYYY-MM-DD"
           value: CURRENT_DATETIME
+
 
 
