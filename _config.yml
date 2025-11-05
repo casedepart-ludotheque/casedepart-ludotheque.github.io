@@ -9,6 +9,25 @@ description: "Write an awesome description for your new site here. You can edit 
 prose:
   rooturl: ''
   siteurl: 'https://casedepart-ludotheque.github.io/'
+  ignore:
+    - 404.html
+    - lib
+    - _config.yml
+    - /_layouts
+    - /_includes
+    - /_data
+    - /plugins
+    - /_site
+    - /css
+    - /font
+    - /img
+    - /js
+    - /mail
+    - index.html
+    - style.css
+    - .prose.yml
+    - gemfile
+    - gemfile.lock
   media: 'img/posts'
   metadata:
     _posts:
@@ -54,6 +73,7 @@ prose:
           element: "hidden"
           placeholder: "YYYY-MM-DD"
           value: CURRENT_DATETIME
+
 
 
 
