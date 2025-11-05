@@ -1,0 +1,40 @@
+name: Convert YAML "description: >-" to "|-"
+
+on:
+  push:
+    branches:
+      - main  # ou 'master', selon ton repo
+    paths:
+      - "_posts/**.md"
+
+permissions:
+  contents: write
+
+jobs:
+  fix-yaml:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Replace '>-’ with '|-' in YAML front matter
+        run: |
+          # Parcourt tous les posts markdown
+          for f in $(find _posts -type f -name "*.md"); do
+            echo "🔧 Traitement du fichier $f"
+            # On remplace uniquement la première ligne 'description: >-' par 'description: |-'
+            sed -i 's/: >-/: |-/g' "$f"
+          done
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "actions@github.com"
+          git add _posts/*.md
+          # On ne commit que s’il y a des changements
+          if ! git diff --cached --quiet; then
+            git commit -m "fix(yaml): convert description >- to |- automatically"
+            git push
+          else
+            echo "✅ Aucun fichier à corriger"
+          fi
