@@ -16,7 +16,7 @@ prose:
     - /_layouts
     - /_includes
     - /_data
-    - /plugins
+    - /_plugins
     - /_site
     - /css
     - /font
@@ -28,6 +28,11 @@ prose:
     - .prose.yml
     - gemfile
     - gemfile.lock
+    - CNAME
+    - LICENSE
+    - README.md
+    - favicon.png
+    - feed.xml
   media: 'img/posts'
   metadata:
     _posts:
@@ -73,6 +78,7 @@ prose:
           element: "hidden"
           placeholder: "YYYY-MM-DD"
           value: CURRENT_DATETIME
+
 
 
 
