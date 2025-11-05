@@ -16,7 +16,7 @@
                         {% if img contains '.jpg' or img contains '.png' %}
                                 <img src="{{ img }}" class="img-responsive img-centered" alt="image article {{ post.titre}}"> 
                         {% endif %}
-              <p>{{ post.description | markdownify }}</p>
+              <p>{{ post.description | markdownify | newline_to_br }}</p>
               <ul class="list-inline item-details">
                 <li>Date:
                   <strong><p>{{ post.datepost | newline_to_br }}</p></strong>
