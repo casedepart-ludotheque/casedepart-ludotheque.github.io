@@ -16,13 +16,13 @@
                         {% if img contains '.jpg' or img contains '.png' %}
                                 <img src="{{ img }}" class="img-responsive img-centered" alt="image article {{ post.titre}}"> 
                         {% endif %}
-              <p>{{ post.description }}</p>
+              <p>{{ post.description | newline_to_br }}</p>
               <ul class="list-inline item-details">
                 <li>Date:
-                  <strong><p>{{ post.datepost }}</p></strong>
+                  <strong><p>{{ post.datepost | newline_to_br }}</p></strong>
                 </li>
                 <li>Lieu:
-                  <strong><p>{{ post.lieu }}</p></strong>
+                  <strong><p>{{ post.lieu | newline_to_br }}</p></strong>
                 </li>
               </ul>
               <button type="button" class="btn btn-default" data-dismiss="modal">
