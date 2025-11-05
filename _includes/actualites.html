@@ -24,14 +24,15 @@
                     </a>
                     <div class="portfolio-caption">
                         <h4>{{ post.titre }}</h4>
-                        <p class="text-muted">{{ post.lieu }}</p>
-                        <p class="text-muted">{{ post.datepost }}</p>
+                        <p class="text-muted">{{ post.lieu | newline_to_br }}</p>
+                        <p class="text-muted">{{ post.datepost | newline_to_br }}</p>
                     </div>
                 </div>
             {% endfor %}
             </div>
         </div>
     </section>
+
 
 
 
