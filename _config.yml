@@ -36,6 +36,9 @@ prose:
   media: 'img/posts'
   metadata:
     _posts:
+      - name: "title"
+        field:
+          element: "hidden"
       - name: "titre"
         field:
           label: "Titre de l'article"
@@ -78,6 +81,7 @@ prose:
           element: "hidden"
           placeholder: "YYYY-MM-DD"
           value: CURRENT_DATETIME
+
 
 
 
