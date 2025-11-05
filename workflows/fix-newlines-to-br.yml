@@ -1,0 +1,55 @@
+name: Convert all YAML multi-line fields newlines to <br>
+
+on:
+  push:
+    branches:
+      - main  # ou master selon ton dépôt
+    paths:
+      - "_posts/**.md"
+
+permissions:
+  contents: write
+
+jobs:
+  convert-newlines:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # nécessaire pour git push
+
+      - name: Convert newlines to <br> in YAML front matter
+        run: |
+          echo "🔍 Recherche des fichiers Markdown..."
+          for f in $(find _posts -type f -name "*.md"); do
+            echo "🧩 Traitement du fichier : $f"
+            
+            # On crée un nouveau fichier temporaire
+            awk '
+            BEGIN {in_yaml=0}
+            /^---$/ {in_yaml++; if(in_yaml==2) in_yaml=0} 
+            in_yaml && /^[[:space:]]*[^:]+: [|>]-/ {
+              field=$1
+              print
+              while((getline line) > 0 && line ~ /^[[:space:]]+/){
+                # supprime indentation initiale puis ajoute <br>
+                gsub(/^[[:space:]]+/, "")
+                print line "<br>"
+              }
+              next
+            }
+            {print}' "$f" > tmpfile && mv tmpfile "$f"
+          done
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "actions@github.com"
+          git add _posts/*.md
+          if ! git diff --cached --quiet; then
+            git commit -m "fix: convert all newlines in multi-line YAML fields to <br>"
+            git push
+          else
+            echo "✅ Aucun fichier à corriger"
