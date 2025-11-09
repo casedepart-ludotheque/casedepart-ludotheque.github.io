@@ -397,11 +397,17 @@ header .intro-text > p{
   transform: rotate(-2deg);
   position: absolute;
   top: -74px;
-  left: 25%;
+  left: 12%;
   padding: 10px;
   text-transform: uppercase;
   font-family: Foo;
   letter-spacing: 2px;
+}
+
+@media(min-width:455px) {
+  header .intro-text > p{  
+    left: 25%;
+  }
 }
 
 header .btn-xl{
@@ -414,6 +420,11 @@ header .btn-xl:focus{
     border: 1px solid white;
 }
 
+@media(max-width:768px) {
+  #actualite{
+    margin-top:1.5rem;
+  }
+}
 @media(min-width:768px) {
     header{
         padding-top: 150px;
