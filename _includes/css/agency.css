@@ -1180,6 +1180,12 @@ body {
     text-align: center;
     margin-bottom: 3rem;
 }
-
 }
+
+@media all and (max-width:767px){
+header{
+  padding-top:160px;
+}
+}
+
 
