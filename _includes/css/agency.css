@@ -1129,6 +1129,12 @@ body {
 
 /* media queries */
 
+@media all and (max-width:767px){
+header{
+  padding-top:160px;
+}
+}
+
 @media all and (min-width:768px) and (max-width:991px){
     .navbar-default .nav li a{
         font-size: 1rem;
@@ -1169,12 +1175,6 @@ body {
     }
 }
 
-@media all and (max-width:1200px){
-    header{
-        padding-top: 220px;
-    }
-}
-
 @media all and (max-width:992px){
 #association-image{
     text-align: center;
@@ -1182,10 +1182,9 @@ body {
 }
 }
 
-@media all and (max-width:767px){
-header{
-  padding-top:160px;
+@media all and (max-width:1200px){
+    header{
+        padding-top: 220px;
+    }
 }
-}
-
 
