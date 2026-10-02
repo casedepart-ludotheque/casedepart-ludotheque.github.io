@@ -24,7 +24,7 @@
                     </a>
                     <div class="portfolio-caption">
                         <h4>{{ post.titre }}</h4>
-                        <p>{{ post.description | newline_to_br }}</p> 
+                        <p>{{ post.description  | markdownify }}</p> 
                         <p class="text-muted">{{ post.lieu | newline_to_br }} - {{ post.datepost | newline_to_br }}</p>
                     </div>
                 </div>
