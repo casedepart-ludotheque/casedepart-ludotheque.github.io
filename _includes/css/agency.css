@@ -483,28 +483,28 @@ section h3.section-subheading {
     text-transform: none;
 }
 
-#programme{
+#acutalites{
    /* background-color: #{{ site.data.template.color.third }};*/
 }
 
-#programme h2,
-#programme h3{
+#acutalites h2,
+#acutalites h3{
     color: #{{ site.data.template.color.primary }} !important;
 }
 
-#programme .portfolio-item {
+#acutalites .portfolio-item {
     right: 0;
     margin: 0 0 15px;
 }
 
-#programme .portfolio-item .portfolio-link {
+#acutalites .portfolio-item .portfolio-link {
     display: block;
     position: relative;
     margin: 0 auto;
     max-width: 400px;
 }
 
-#programme .portfolio-item .portfolio-link .portfolio-hover {
+#acutalites .portfolio-item .portfolio-link .portfolio-hover {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -516,11 +516,11 @@ section h3.section-subheading {
     background: rgba({{ site.data.template.color.primary | hex_to_rgb | join: ',' }}, .9);
 }
 
-#programme .portfolio-item .portfolio-link .portfolio-hover:hover {
+#acutalites .portfolio-item .portfolio-link .portfolio-hover:hover {
     opacity: 1;
 }
 
-#programme .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+#acutalites .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -531,16 +531,16 @@ section h3.section-subheading {
     color: #fff;
 }
 
-#programme .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+#acutalites .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
     margin-top: -12px;
 }
 
-#programme .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#programme .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+#acutalites .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#acutalites .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
     margin: 0;
 }
 
-#programme .portfolio-item .portfolio-caption {
+#acutalites .portfolio-item .portfolio-caption {
     margin: 0 auto;
     padding: 25px;
     max-width: 400px;
@@ -548,24 +548,24 @@ section h3.section-subheading {
     background-color: #fff;
 }
 
-#programme .portfolio-item .portfolio-caption h4 {
+#acutalites .portfolio-item .portfolio-caption h4 {
     margin: 0;
     text-transform: none;
 }
 
-#programme .portfolio-item .portfolio-caption p {
+#acutalites .portfolio-item .portfolio-caption p {
     margin: 0;
     font-family: {{ site.data.template.font.secondary }};
     font-size: 16px;
     font-style: italic;
 }
 
-#programme * {
+#acutalites * {
     z-index: 2;
 }
 
 @media(min-width:767px) {
-    #programme .portfolio-item {
+    #acutalites .portfolio-item {
         margin: 0 0 30px;
     }
 }
@@ -1030,7 +1030,7 @@ body {
 
 /*  programme */
 
-#programme h2{
+#acutalites h2{
     margin-bottom: 10px;
 }
 
